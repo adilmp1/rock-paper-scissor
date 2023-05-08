@@ -70,7 +70,7 @@ function App() {
     }
     else if(value==='paper')
     {
-      if(computer==='scissor')
+      if(computer==='rock')
       {
         setYourScore(yourScore+1)
       }

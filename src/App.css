@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+body{
+  background: radial-gradient(circle, rgba(4,50,98,1) 100%, rgba(0,0,0,1) 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  row-gap: 20px;
+  justify-content: space-between;
+  /* height: 60vh; */
+}
+.options{
+  background-color: aliceblue;
+  width: fit-content;
+  padding: 10px 30px;
+  border-radius: 10px;
+  display: none;
+  position: absolute;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.options li {
+  list-style: none;
+  text-decoration: none;
+  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
+  padding: 5px 10px;
+  border-radius: 10px;
+  /* width: 80%; */
+  /* color: white; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.options li:hover{
+  background-color: rgb(168, 168, 168);
+  cursor: pointer;
+}
+
+.score-board{
+  border: 2px solid rgb(255, 246, 246);
+  border-radius: 10px;
+  width: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px
+}
+
+.score{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(255, 238, 238);
+  width: 10%;
+  padding: 20px;
+  border-radius: 10px;
+  width: 20%;
 }
 
-.App-link {
-  color: #61dafb;
+.game-area
+{
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px;
+  row-gap: 10px;
+  border-radius: 10px;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.game-area img {
+  height: 120px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  padding: 10px;
+  /* border: 7px solid red; */
+}
+
+.computer{
+  border: 7px solid red;
+  
+}
+
+.you{
+  border: 7px solid green;
 }
